@@ -2,7 +2,7 @@ const express = require("express");
 const Vigenere = require('caesar-salad').Vigenere;
 const app = express();
 const password = 'password';
-const PORT = 8001;
+const PORT = 8000;
 
 app.get("/", (req, res) => {
     res.send("Enter a word for encryption and decryption...");
@@ -17,7 +17,7 @@ app.get('/decode/:password', (req, res) => {
 });
 
 app.listen(PORT, () => {
-    console.log("Server running at 8001");
+    console.log("Server running at 8000");
 })
 
 
